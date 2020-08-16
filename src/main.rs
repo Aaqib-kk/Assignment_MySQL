@@ -4,11 +4,11 @@ use std::io;
 use mysql as my;
 use std::fmt;
 #[derive(Debug, PartialEq, Eq)]
-pub struct Student {
-    pub sid: String,
-    pub name: String,
-    pub email: String,
-    pub age: String,
+struct Student {
+    sid: String,
+    name: String,
+    email: String,
+    age: String,
 }
 fn read_input() -> String {
     let mut input = String::new();
